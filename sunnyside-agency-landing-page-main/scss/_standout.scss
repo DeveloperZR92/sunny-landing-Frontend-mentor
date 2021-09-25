@@ -1,0 +1,64 @@
+@import './variables';
+
+.stand-out {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .glass {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .standout-text {
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+
+    h1 {
+      margin-bottom: 30px;
+      font-family: $frauces;
+      color: $Verydarkdesaturatedblue;
+    }
+
+    p {
+      color: $Verydarkdesaturatedblue;
+      opacity: 0.6;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: $Verydarkdesaturatedblue;
+      text-transform: uppercase;
+      font-family: $frauces;
+      text-decoration-color: $Softred;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .stand-out {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .standout-text {
+    width: 100%;
+    height: 100vh;
+    text-align: center !important;
+  }
+
+  .glass {
+    width: 100%;
+    height: 100vh;
+  }
+}
